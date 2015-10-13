@@ -45,3 +45,18 @@ will save the iptables rule changes
 
 - sudo iptables -t nat -L -n -v
 will show the current rules
+
+
+### Start/Stop Vncserver on SUSE Linux
+-  To Start:
+
+vncserver -geometry 1024x768 -depth 16 -name remote-desktop :2
+
+to login, use port as 5902
+
+- To Kill
+
+vncserver -kill :2
+
+
+
