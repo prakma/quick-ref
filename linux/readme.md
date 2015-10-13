@@ -47,6 +47,7 @@ will save the iptables rule changes
 will show the current rules
 
 
+
 ### Start/Stop Vncserver on SUSE Linux
 -  To Start:
 
@@ -58,5 +59,9 @@ to login, use port as 5902
 
 vncserver -kill :2
 
+
+
+### How to  redirect both stdout and stderr to same file
+cmd >file.log 2>&1
 
 
