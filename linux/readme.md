@@ -65,3 +65,14 @@ vncserver -kill :2
 cmd >file.log 2>&1
 
 
+### Change the ownership of a folder recursively
+sudo chown -R username:group directory or sudo chown username directory
+
+where username is the new owner and directory is the folder whose ownership needs to be changed
+
+### Search which file has a particular text and only display filename
+grep -l Wehrenberg *.debug
+
+where Wehrenberg is the text we are searching in all files that end with ".debug" in the current folder
+
+
