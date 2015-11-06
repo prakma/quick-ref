@@ -65,3 +65,9 @@ vncserver -kill :2
 cmd >file.log 2>&1
 
 
+### SSH Tunneling
+ssh -f apcuser@machine2 -p 2222 -L8443:machine2:443 -N
+
+The above command listens on port 8443 on the local machine and creates a SSH tunnel and forwards it to <machine2> on port 443. The remote machine2 has its SSH running on a custom port 2222. <apcuser> is the user on <machine2> whose credentials are used to establish the SSH tunnel.
+
+
