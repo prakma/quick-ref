@@ -1,5 +1,11 @@
 #Quick Ref for all things Linux
 
+### How to check os and linux version
+- uname -mrs
+or uname -a
+
+and lsb_release -a
+
 ### How to check which versions of software is available for install
 - sudo apt-cache madison ^curl
 Will show the versions of curl
@@ -65,6 +71,24 @@ vncserver -kill :2
 cmd >file.log 2>&1
 
 
+
+### Change the ownership of a folder recursively
+sudo chown -R username:group directory or sudo chown username directory
+
+where username is the new owner and directory is the folder whose ownership needs to be changed
+
+### Search which file has a particular text and only display filename
+grep -l Wehrenberg *.debug
+
+where Wehrenberg is the text we are searching in all files that end with ".debug" in the current folder
+
+
+### scp copy a folder recursively
+scp -rp sourcedirectory user@dest:/path
+
+-r is for recursive copy
+-p preserves modification times, access times, and modes from the original file.
+
 ### SSH Tunneling
 ssh -f apcuser@machine2 -p 2222 -L8443:machine2:443 -N
 
@@ -72,9 +96,9 @@ The above command listens on port 8443 on the local machine and creates a SSH tu
  -N instructs OpenSSH to not execute a command on the remote system
 
 
+
  ### Find out information about Ubuntu version and kernel version
  - for ubuntu version:- lsb_release -a
  - for kernel version:- uname -r
-
 
 
