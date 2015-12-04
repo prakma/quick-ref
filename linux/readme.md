@@ -72,3 +72,9 @@ The above command listens on port 8443 on the local machine and creates a SSH tu
  -N instructs OpenSSH to not execute a command on the remote system
 
 
+ ### Find out information about Ubuntu version and kernel version
+ - for ubuntu version:- lsb_release -a
+ - for kernel version:- uname -r
+
+
+
