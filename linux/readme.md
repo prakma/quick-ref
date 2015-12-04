@@ -1,5 +1,11 @@
 #Quick Ref for all things Linux
 
+### How to check os and linux version
+- uname -mrs
+or uname -a
+
+and lsb_release -a
+
 ### How to check which versions of software is available for install
 - sudo apt-cache madison ^curl
 Will show the versions of curl
@@ -63,5 +69,12 @@ vncserver -kill :2
 
 ### How to  redirect both stdout and stderr to same file
 cmd >file.log 2>&1
+
+
+### scp copy a folder recursively
+scp -rp sourcedirectory user@dest:/path
+
+-r is for recursive copy
+-p preserves modification times, access times, and modes from the original file.
 
 
